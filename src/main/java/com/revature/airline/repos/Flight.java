@@ -1,6 +1,10 @@
-package com.revature.airline.pojo;
+package com.revature.airline.repos;
 
-public class Flight {
+import utils.Repository;
+
+import java.sql.Connection;
+
+public class Flight  {
     int flightNumber;
     String departureLocation;
     String destinationLocation;
@@ -8,5 +12,9 @@ public class Flight {
     public Flight(String departureLocation, String destinationLocation) {
         this.departureLocation = departureLocation;
         this.destinationLocation = destinationLocation;
+
     }
+
+
+
 }

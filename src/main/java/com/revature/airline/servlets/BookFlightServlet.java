@@ -1,12 +1,12 @@
-package servlets;
-
-import com.revature.airline.pojo.Flight;
+package com.revature.airline.servlets;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+@WebServlet("/book")
 public class BookFlightServlet {
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
@@ -14,9 +14,10 @@ public class BookFlightServlet {
         String departureLocation = req.getParameter ("From");
 
 
-        Flight flight = new Flight (departureLocation, destinationLocation);
 
-        //TODO
+
+
+
 
 
 
