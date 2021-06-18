@@ -89,7 +89,7 @@ flightService.createFlight
 
 
 ## Application properties:
-The jdbc.properties file should be located in your Resources Root directory. By default this directory is: /ssc/main/resources/ This file should not be included in github as it contains sensitive information. Thus it is included in .gitignore and not present here. You'll want to set it up yourself locally and make these details available to any environment the application is deployed to.
+The jdbc.properties file should be located in your Resources Root directory. By default this directory is: /src/main/resources/ This file should not be included in github as it contains sensitive information. Thus it is included in .gitignore and not present here. You'll want to set it up yourself locally and make these details available to any environment the application is deployed to.
  The following fields are necessary to establish a connection to the database:
 
 ```
